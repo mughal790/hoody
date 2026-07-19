@@ -53,7 +53,7 @@ export default function AuthPage() {
       {/* Ferrofluid full-screen background */}
       <div className="absolute inset-0 z-0">
         <Ferrofluid
-          colors={['#1a1a2e', '#16213e', '#0f3460', '#533483', '#e94560']}
+          colors={['#ff006e', '#8338ec', '#3a86ff', '#06d6a0', '#ffbe0b']}
           speed={0.4}
           scale={1.8}
           turbulence={0.9}
