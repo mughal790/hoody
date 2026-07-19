@@ -1,0 +1,48 @@
+2026-07-19T04:40:06.63462Z	Cloning repository...
+2026-07-19T04:40:07.352699Z	From https://github.com/mughal790/hoody
+2026-07-19T04:40:07.353Z	 * branch            d641e3da4dbdcfe1e5e218c607bbeac9c5ec9a9e -> FETCH_HEAD
+2026-07-19T04:40:07.353058Z	
+2026-07-19T04:40:07.376321Z	HEAD is now at d641e3d Remove the electricity effect from the entire project
+2026-07-19T04:40:07.376704Z	
+2026-07-19T04:40:07.419871Z	
+2026-07-19T04:40:07.420392Z	Using v2 root directory strategy
+2026-07-19T04:40:07.434679Z	Success: Finished cloning repository files
+2026-07-19T04:40:09.610199Z	Checking for configuration in a Wrangler configuration file (BETA)
+2026-07-19T04:40:09.610866Z	
+2026-07-19T04:40:09.611372Z	Found wrangler.toml file. Reading build configuration...
+2026-07-19T04:40:09.618475Z	pages_build_output_dir: dist/public
+2026-07-19T04:40:09.618674Z	Build environment variables: 
+2026-07-19T04:40:09.618806Z	  - NODE_VERSION: 20
+2026-07-19T04:40:09.618895Z	  - SKIP_DEPENDENCY_INSTALL: 1
+2026-07-19T04:40:09.792516Z	Successfully read the Wrangler configuration file.
+2026-07-19T04:40:10.265919Z	Detected the following tools from environment: nodejs@20.20.0, npm@10.9.2
+2026-07-19T04:40:10.266417Z	Installing nodejs 20.20.0
+2026-07-19T04:40:11.080612Z	Trying to update node-build... ok
+2026-07-19T04:40:11.145782Z	To follow progress, use 'tail -f /tmp/node-build.20260719044011.804.log' or pass --verbose
+2026-07-19T04:40:11.204374Z	Downloading node-v20.20.0-linux-x64.tar.gz...
+2026-07-19T04:40:11.34122Z	-> https://nodejs.org/dist/v20.20.0/node-v20.20.0-linux-x64.tar.gz
+2026-07-19T04:40:13.810724Z	
+2026-07-19T04:40:13.811825Z	WARNING: node-v20.20.0-linux-x64 is past its end of life and is now unsupported.
+2026-07-19T04:40:13.811955Z	It no longer receives bug fixes or security updates.
+2026-07-19T04:40:13.812167Z	
+2026-07-19T04:40:13.812303Z	Installing node-v20.20.0-linux-x64...
+2026-07-19T04:40:14.238304Z	Installed node-v20.20.0-linux-x64 to /opt/buildhome/.asdf/installs/nodejs/20.20.0
+2026-07-19T04:40:14.23863Z	
+2026-07-19T04:40:14.998845Z	SKIP_DEPENDENCY_INSTALL is present in environment. Skipping automatic dependency installation.
+2026-07-19T04:40:14.999225Z	Executing user command: npm run build:client
+2026-07-19T04:40:15.329667Z	
+2026-07-19T04:40:15.330242Z	> hoody@1.0.0 prebuild:client
+2026-07-19T04:40:15.330342Z	> npm install --no-fund --no-audit
+2026-07-19T04:40:15.330456Z	
+2026-07-19T04:40:51.945012Z	npm error Exit handler never called!
+2026-07-19T04:40:51.945622Z	npm error This is an error with npm itself. Please report this error at:
+2026-07-19T04:40:51.945735Z	npm error   <https://github.com/npm/cli/issues>
+2026-07-19T04:40:51.945781Z	npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2026-07-19T04_40_15_489Z-debug-0.log
+2026-07-19T04:40:51.956298Z	
+2026-07-19T04:40:51.956737Z	> hoody@1.0.0 build:client
+2026-07-19T04:40:51.956912Z	> vite build
+2026-07-19T04:40:51.956991Z	
+2026-07-19T04:40:51.960574Z	sh: 1: vite: not found
+2026-07-19T04:40:51.9761Z	Failed: Error while executing user command. Exited with error code: 127
+2026-07-19T04:40:51.982809Z	Failed: build command exited with code: 1
+2026-07-19T04:40:52.561343Z	Failed: error occurred while running build command

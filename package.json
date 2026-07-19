@@ -1,0 +1,59 @@
+{
+  "name": "hoody",
+  "version": "1.0.0",
+  "description": "Hoody - Premium Men's Fashion Brand",
+  "engines": {
+    "node": "20.x",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "vite",
+    "dev:server": "tsx watch server/src/index.ts",
+    "build": "npm run build:client",
+    "build:client": "vite build",
+    "build:server": "echo 'Server runs via tsx - no compile step needed'",
+    "start": "tsx server/src/index.ts",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@supabase/supabase-js": "^2.109.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.25",
+    "@types/node": "^20.19.43",
+    "@types/ws": "^8.18.1",
+    "axios": "^1.18.1",
+    "clsx": "^2.1.1",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2",
+    "framer-motion": "^11.18.2",
+    "helmet": "^7.2.0",
+    "lucide-react": "^0.446.0",
+    "ogl": "^1.0.11",
+    "pino": "^9.14.0",
+    "pino-http": "^10.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.80.0",
+    "react-router-dom": "^6.30.4",
+    "tailwind-merge": "^2.6.1",
+    "tsx": "^4.23.0",
+    "typescript": "^5.9.3",
+    "ws": "^8.21.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.7.0",
+    "autoprefixer": "^10.5.2",
+    "pino-pretty": "^11.3.0",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^3.4.19",
+    "vite": "^5.4.21"
+  }
+}

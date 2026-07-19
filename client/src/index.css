@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-sans text-black dark:text-white bg-white dark:bg-dark-bg;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-100 dark:bg-dark-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-300 dark:bg-dark-border rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-400 dark:bg-neutral-600;
+  }
+
+  ::selection {
+    background-color: theme('colors.brand.gold');
+    color: white;
+  }
+}
+
+@layer components {
+  .container-xl {
+    @apply max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center h-11 px-6 bg-black dark:bg-white text-white dark:text-black text-sm font-medium tracking-wide rounded transition-all duration-200 hover:bg-neutral-800 dark:hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2;
+  }
+
+  .input-base {
+    @apply w-full h-11 px-4 border border-neutral-200 dark:border-dark-border rounded text-sm bg-white dark:bg-dark-card text-black dark:text-white placeholder:text-neutral-400 focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:border-transparent transition-all;
+  }
+
+  .card {
+    @apply bg-white dark:bg-dark-card rounded-xl border border-neutral-100 dark:border-dark-border;
+  }
+
+  .heading-xl {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl font-bold leading-none;
+  }
+
+  .heading-lg {
+    @apply font-serif text-3xl md:text-4xl font-bold;
+  }
+
+  .heading-md {
+    @apply font-serif text-2xl md:text-3xl font-semibold;
+  }
+
+  .tag {
+    @apply text-xs font-semibold tracking-widest uppercase text-brand-gold;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .aspect-product {
+    aspect-ratio: 3 / 4;
+  }
+
+  .bg-glass {
+    @apply bg-white/80 dark:bg-dark-bg/80 backdrop-blur-md;
+  }
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+/* Shimmer loading effect */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    theme('colors.neutral.100') 25%,
+    theme('colors.neutral.200') 50%,
+    theme('colors.neutral.100') 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.dark .shimmer {
+  background: linear-gradient(
+    90deg,
+    theme('colors.dark.card') 25%,
+    theme('colors.dark.border') 50%,
+    theme('colors.dark.card') 75%
+  );
+  background-size: 200% 100%;
+}

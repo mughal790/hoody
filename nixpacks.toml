@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.caddy]
+nixPkgs = []
+cmds = []
+
+[phases.install]
+cmds = ["npm install --omit=dev --no-fund --no-audit"]
+
+[phases.build]
+cmds = ["echo 'OK'"]
+
+[start]
+cmd = "node_modules/.bin/tsx server/src/index.ts"

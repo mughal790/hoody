@@ -1,0 +1,3 @@
+- [Non-artifact custom-structure projects](non-artifact-projects.md) — when a user demands root-level client/server + npm (no pnpm workspace/artifacts folder), skip createArtifact/pnpm skills entirely; screenshot tool won't work without an artifact.toml.
+- [Tailwind content globs in monorepo subfolders](tailwind-monorepo-content-globs.md) — relative content paths in a tailwind.config.js living outside repo root resolve against process.cwd(), not the config file — must resolve via import.meta.url.
+- [Supabase JS in Node 20 backend](supabase-node20-websocket.md) — @supabase/supabase-js throws "Node.js 20 detected without native WebSocket support" on the server unless you pass the `ws` package as `realtime.transport`.
