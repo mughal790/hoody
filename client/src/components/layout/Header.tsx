@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
+import logo from '../../assets/logo-transparent.png'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ShoppingBag, Heart, Sun, Moon, Menu, X, Search, User, ChevronDown, ArrowLeft } from 'lucide-react'
 import { useTheme } from '../../contexts/ThemeContext'

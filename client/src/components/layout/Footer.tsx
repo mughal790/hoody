@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Instagram, Twitter, Youtube, Facebook } from 'lucide-react'
+import logo from '../../assets/logo-transparent.png'
 import { CATEGORIES } from '../../data/products'
 
 const footerLinks = {
