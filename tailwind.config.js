@@ -10,15 +10,15 @@ export default {
       },
       colors: {
         brand: {
-          gold: '#C4A35A',
-          'gold-light': '#D4B878',
-          'gold-dark': '#A8893E',
+          gold: '#4ECDC4',
+          'gold-light': '#7EDDD7',
+          'gold-dark': '#2BB5AC',
         },
         dark: {
-          bg: '#0A0A0A',
-          card: '#141414',
-          border: '#2A2A2A',
-          muted: '#1A1A1A',
+          bg: '#0C0E10',
+          card: '#141820',
+          border: '#1E2530',
+          muted: '#111418',
         },
       },
       animation: {

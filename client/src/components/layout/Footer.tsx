@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Instagram, Twitter, Youtube, Facebook } from 'lucide-react'
-import logo from '../../assets/logo-transparent.png'
+import riftLogo from '../../assets/rift-logo.png'
 import { CATEGORIES } from '../../data/products'
 
 const footerLinks = {
@@ -18,7 +18,7 @@ const footerLinks = {
     { label: 'FAQ', href: '/faq' },
   ],
   Company: [
-    { label: 'About Hoody', href: '/about' },
+    { label: 'About RIFT', href: '/about' },
     { label: 'Sustainability', href: '/sustainability' },
     { label: 'Careers', href: '/careers' },
     { label: 'Press', href: '/press' },
@@ -91,8 +91,8 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-neutral-800 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-4">
-            <Link to="/" className="font-serif text-2xl font-bold text-white tracking-widest uppercase">
-              HOODY
+            <Link to="/">
+              <img src={riftLogo} alt="RIFT" className="h-10 w-auto object-contain" />
             </Link>
             <span className="text-neutral-600 text-xs">Premium Men's Fashion</span>
           </div>
@@ -111,7 +111,7 @@ export default function Footer() {
           </div>
 
           <p className="text-xs text-neutral-600 text-center md:text-right">
-            &copy; {new Date().getFullYear()} Hoody. All rights reserved.
+            &copy; {new Date().getFullYear()} RIFT. All rights reserved.
           </p>
         </div>
       </div>

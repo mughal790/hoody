@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
-import logo from '../../assets/logo-transparent.png'
+import riftLogo from '../../assets/rift-logo.png'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ShoppingBag, Heart, Sun, Moon, Menu, X, Search, User, ChevronDown, ArrowLeft } from 'lucide-react'
 import { useTheme } from '../../contexts/ThemeContext'
@@ -64,9 +64,7 @@ export default function Header() {
                 </button>
               )}
               <Link to="/" className="flex-shrink-0">
-                <span className="font-serif text-2xl md:text-3xl font-bold tracking-widest uppercase transition-colors text-white">
-                  HOODY
-                </span>
+                <img src={riftLogo} alt="RIFT" className="h-10 md:h-12 w-auto object-contain" />
               </Link>
             </div>
 

@@ -396,7 +396,7 @@ export default function HomePage() {
         <section className="relative h-[500px] md:h-[600px] overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&w=1920&q=80"
-            alt="Hoody brand banner"
+            alt="RIFT brand banner"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/55" />
@@ -492,7 +492,7 @@ export default function HomePage() {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1520975916090-2f49ff8b957d?auto=format&fit=crop&w=800&q=80"
-                alt="Hoody brand story"
+                alt="RIFT brand story"
                 className="w-full aspect-[4/5] object-cover rounded-lg"
               />
               <div className="absolute -bottom-6 -right-6 bg-brand-gold text-white p-6 rounded-lg hidden md:block">
@@ -506,7 +506,7 @@ export default function HomePage() {
                 Clothing That Speaks Before You Do
               </h2>
               <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed mb-6">
-                At Hoody, we believe that great style is not about trends — it's about confidence. Every piece in our collection is designed to help you move through the world with purpose and poise.
+                At RIFT, we believe that great style is not about trends — it's about confidence. Every piece in our collection is designed to help you move through the world with purpose and poise.
               </p>
               <p className="text-neutral-500 dark:text-neutral-400 leading-relaxed mb-10">
                 We partner with artisans and factories that share our commitment to quality and sustainability. From the cotton fields of Egypt to the workshops of Portugal, every garment tells a story of craft and intention.
@@ -535,8 +535,8 @@ export default function HomePage() {
             </div>
             <div className="grid md:grid-cols-3 gap-6 md:gap-8">
               {[
-                { name: 'James O.', location: 'London, UK', rating: 5, text: 'The quality is absolutely unmatched. The Oxford shirt I ordered fits perfectly and the fabric is incredibly soft. Hoody is now my go-to brand.' },
-                { name: 'Marco R.', location: 'Milan, Italy', rating: 5, text: 'I\'ve ordered from many premium brands but Hoody delivers something special. The attention to detail in the stitching and the cut is exceptional.' },
+                { name: 'James O.', location: 'London, UK', rating: 5, text: 'The quality is absolutely unmatched. The Oxford shirt I ordered fits perfectly and the fabric is incredibly soft. RIFT is now my go-to brand.' },
+                { name: 'Marco R.', location: 'Milan, Italy', rating: 5, text: 'I\'ve ordered from many premium brands but RIFT delivers something special. The attention to detail in the stitching and the cut is exceptional.' },
                 { name: 'Alex K.', location: 'New York, USA', rating: 5, text: 'The leather biker jacket is worth every penny. I get compliments every time I wear it. Fast shipping and beautiful packaging too.' },
               ].map((t, i) => (
                 <motion.div
@@ -597,7 +597,7 @@ export default function HomePage() {
         <section className="py-16 md:py-24 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <span className="text-xs font-semibold tracking-widest uppercase text-brand-gold">Follow Us</span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-black dark:text-white mt-2">@hoody.official</h2>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-black dark:text-white mt-2">@rift.official</h2>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-2">
             {[
