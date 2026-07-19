@@ -51,7 +51,7 @@ export default function Header() {
         className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md bg-black/30 border-b border-white/10"
       >
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 md:h-20">
+          <div className="flex items-center justify-between h-20 md:h-24">
             {/* Back button + Logo */}
             <div className="flex items-center gap-2">
               {location.pathname !== '/' && (
@@ -64,7 +64,7 @@ export default function Header() {
                 </button>
               )}
               <Link to="/" className="flex-shrink-0">
-                <img src={riftLogo} alt="RIFT" className="h-10 md:h-12 w-auto object-contain" />
+                <img src={riftLogo} alt="RIFT" className="h-16 md:h-20 w-auto object-contain drop-shadow-[0_0_12px_rgba(78,205,196,0.5)]" />
               </Link>
             </div>
 
